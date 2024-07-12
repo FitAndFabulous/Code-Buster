@@ -1,0 +1,560 @@
+
+// ============= CHAPTER 01 =====================
+
+
+// INTRODUCTION JAVASCRIPT 
+
+// Coding Assessment
+
+// Sum of two numbers
+
+// In the serene countryside of Mathland, there were two young friends, Lily and Ethan, who loved exploring the beauty of numbers. One sunny afternoon, they stumbled upon an ancient mathematical scroll with a mysterious challenge.
+
+// The scroll contained a mystical function named calculateSum, which took two numbers as input and returned their harmonious sum. With excitement in their eyes, Lily and Ethan set out to solve the riddle and uncover the magic hidden within the function.
+
+// Can you help Lily and Ethan complete the calculateSum function to unveil the harmonious sum of the two numbers?
+
+// Example 1:
+// Input:
+// 2 3
+
+// Output:
+// 5
+// hINT   return num1 + num2;
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num1 = parseInt(readLine());
+    var num2 = parseInt(readLine());
+    console.log(calculateSum(num1,num2));
+}
+function calculateSum(num1, num2) {
+  //Your code goes here
+    return num1 + num2;
+}
+
+// 02 =
+// The Truth Detector
+
+// solved
+// In the technologically advanced city of Codeville, there was a clever programmer named Ava who created a truth-detecting algorithm. To test its powers, she embarked on a mission to determine the truthfulness of a statement.
+
+// The statement was represented by a variable named isTrue, which contained a boolean value. Ava's task was to log the data type of this variable to the console, unlocking the key to the statement's truth.
+
+// Can you assist Ava in this important mission by writing a code snippet to reveal the data type of isTrue and uncover the mystery?
+
+// Example 1:
+// Input:
+// true
+
+// Output:
+// boolean
+
+// Example 2:
+// Input:
+// false
+
+// Output:
+// boolean
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    //Your code goes here
+    const isTrue = true;
+console.log(typeof isTrue);
+}
+
+// 03 ============================================
+
+// The Data Detective
+
+// In the charming village of JavaScriptville, a young detective named Max was known for solving mysterious data cases. One day, the villagers approached Max with an intriguing challenge. They had a magical box that could contain anything - numbers, strings, arrays, or even objects. However, the villagers were unsure about the contents inside the box.
+
+// Max's task was to determine the type of the input inside the magical box and report back with the result.
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    // Your code goes here
+    for (let i = 0; i <= 10; i += 2) {
+  console.log(i);
+}
+}
+
+
+
+// Topic 2 ========================
+
+// Number is even or not
+
+// Once upon a time, there was a young boy named William who loved to play with blocks. He would spend hours building towers and castles with his colorful blocks. One day, he decided to build a tower using only even numbers of blocks. He wanted to make sure each layer of his tower had an even number of blocks, but he didn’t know how to check if a number was even or not. Writing a function that takes a number as input and returns true if it is an even number, and false otherwise. This will help William determine if he can use that number of blocks in his tower.
+
+// Example 1:
+// Input:
+// 4
+
+// Output:
+// true
+
+// Example 2:
+// Input:
+// 5
+
+// Output:
+// false
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num = parseInt(readLine());
+    console.log(isEvenNumber(num));
+}
+function isEvenNumber(num) {
+ // Your code goes here
+   return num % 2 === 0;
+}
+
+// ===02
+// Minute converter
+
+// Imagine you have a magical time converter. It takes a number of minutes as input and instantly transforms it into the equivalent number of seconds. Your task is to write a function that utilizes this converter to help people calculate how many seconds are in a given number of minutes.
+
+// Example 1:
+// Input:
+// 3
+
+// Output:
+// 180
+
+// Example 2:
+// Input:
+// 0
+
+// Output:
+// 0
+
+function convertMinutesToSeconds(minutes) {
+    return minutes * 60;
+  }
+  function main () {
+  let minutes = parseInt(readLine());
+   console.log(convertMinutesToSeconds(minutes));
+  }
+
+  //03
+
+//   Nature of number
+
+// Once upon a time, there was a magical function that could determine the nature of numbers. It had the power to analyze whether a number was positive, negative, or even zero. With this knowledge, it would whisper a message, revealing the true essence of the number to anyone who sought its guidance. Write that magical function and determine the nature of numbers.
+
+// Example 1:
+// Input:
+// 5
+
+// Output:
+// Positive
+
+// Example 2:
+// Input:
+// -5
+
+// Output:
+// Negative
+
+// Example 3:
+// Input:
+// 0
+
+// Output:
+// Zero
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num = parseInt(readLine());
+    console.log(checkNumber(num));
+}
+function checkNumber(num) {
+  // Your code goes here
+if (num > 0) {
+    return "Positive";
+  } else if (num < 0) {
+    return "Negative";
+  } else {
+    return "Zero";
+  }
+}
+
+
+
+
+// JS Foundation 
+
+// The Sign of Product
+// Easy
+// +10 APs
+// solved
+// In a faraway land of mathematical wonders, a group of curious mathematicians found themselves pondering over the signs of products. They decided to embark on a coding journey to build a function that would determine the sign of the product of three given numbers.
+
+// The mathematicians laid down the rules for the function called productSign:
+
+// If the product is positive (greater than 0), the function should return 1. If the product is negative (less than 0), the function should return -1. If the product is zero, the function should return 0. The mathematicians were eager to see their function come to life and started coding in JavaScript. However, they faced some challenges in handling different scenarios.
+
+// Can you use your coding prowess to assist the mathematicians in creating the function productSign and unraveling the mysteries of the signs of products?
+
+// Example 1:
+// Input:
+// 2, 3, 5
+
+// Output:
+// 1
+
+// Example 2:
+// Input:
+// -4, 6, 0
+
+// Output:
+// 0
+
+// Example 3:
+// Input:
+// -1, -2, -3
+
+// Output:
+// -1
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num1 = parseInt(readLine());
+    var num2 = parseInt(readLine());
+    var num3 = parseInt(readLine());
+    console.log(productSign(num1, num2, num3));
+}
+  // Your code goes here
+ function productSign(num1, num2, num3) {
+  const product = num1 * num2 * num3;
+  if (product > 0) {
+    return 1;
+  } else if (product < 0) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+
+// // The Sign Checker
+// Easy
+
+// In a land where mathematical wizards roamed, the people needed a function that could determine the signs of three given numbers and return the result as a string. They sought a JavaScript function to aid them in their quest.
+
+// Write a JavaScript function called checkSign that takes three numbers as input and returns a string representing the signs of the numbers.
+
+// If all three numbers are positive, return "+++" If two numbers are positive and one is negative, return "++-" If one number is positive and two are negative, return "+--" If all three numbers are negative, return "---"
+
+// Example 1:
+// Input:
+// 1, 2, 3
+
+// Output:
+// "+++"
+
+// Example 2:
+// Input:
+// -1, 2, 3
+
+// Output:
+// "++-"
+
+// Example 3:
+// Input:
+// -1, -2, 3
+
+// Output:
+// "+--"
+
+// Example 4:
+// Input:
+// -1, -2, -3
+
+// Output:
+// "---"
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num1 = parseInt(readLine());
+    var num2 = parseInt(readLine());
+    var num3 = parseInt(readLine());
+    console.log(checkSign(num1, num2, num3));
+}
+  // Your code goes here
+  function checkSign(num1, num2, num3) {
+  let positiveCount = 0;
+  let negativeCount = 0;
+
+  if (num1 > 0) positiveCount++;
+  if (num2 > 0) positiveCount++;
+  if (num3 > 0) positiveCount++;
+
+  negativeCount = 3 - positiveCount;
+
+  if (positiveCount === 3) return "+++";
+  if (positiveCount === 2) return "++-";
+  if (positiveCount === 1) return "+--";
+  if (positiveCount === 0) return "---";
+}
+
+
+//The Odd or Even Sum
+
+// In the mystical land of numbers, there lived a talented JavaScript wizard named Alaric. He possessed a unique power to distinguish between odd and even numbers effortlessly. One day, the people of the land came to him with a puzzling request. They wanted a function that could compute the sum of odd and even numbers separately from a given array of integers.
+
+// Determined to help, Alaric began crafting a function called oddOrEvenSum. The function would take an array of integers as input and return an object containing the sum of all odd numbers and the sum of all even numbers found in the array.
+
+// With a heart full of curiosity and magic at his fingertips, Alaric delved into the task, creating a solution that showcased his mastery over decision statements. Little did he know that this function would prove invaluable to the people of the mystical land, helping them unravel the secrets hidden within their numbers.
+
+// Can you assist Alaric in completing his enchanting oddOrEvenSum function to bring balance to the numbers of the land?
+
+// Example 1:
+// Input:
+// [1, 2, 3, 4, 5]
+
+// Output:
+// { oddSum: 9, evenSum: 6 }
+
+// Example 2:
+// Input:
+// [10, 20, 30, 40, 50]
+
+// Output:
+// { oddSum: 0, evenSum: 150 }
+
+// Example 3:
+// Input:
+// [7, 13, 42, 31, 55]
+
+// Output:
+// { oddSum: 106, evenSum: 42 }
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var arr = readLine().split(" ").map(x => parseInt(x));
+    console.log(oddOrEvenSum(arr));
+}
+  // Your code goes here
+  function oddOrEvenSum(arr) {
+  let oddSum = 0;
+  let evenSum = 0;
+
+  for (let num of arr) {
+    if (num % 2 === 0) {
+      evenSum += num;
+    } else {
+      oddSum += num;
+    }
+  }
+
+  return { oddSum, evenSum };
+}
+
+// The Grade Distributor
+
+// In a kingdom where knowledge was highly cherished, the wise scholars developed a system to grade students based on their academic performance. They assigned letter grades "A", "B", "C", "D", and "F" to represent different levels of achievement.
+
+// The kingdom needed a function that would analyze a set of numerical scores and distribute the corresponding letter grades to each student. They sought a skilled JavaScript sorcerer to create the distributeGrades function.
+
+// The distributeGrades function would take an array of numerical scores as input and return an object containing the count of grades distributed as "A", "B", "C", "D", and "F", respectively, based on the following scale:
+
+// Scores from 90 to 100 would receive an "A". Scores from 80 to 89 would receive a "B". Scores from 70 to 79 would receive a "C". Scores from 60 to 69 would receive a "D". Scores below 60 would receive an "F". Eager to leave a mark on the kingdom's education system, the JavaScript sorcerer accepted the challenge. Utilizing decision statements, the sorcerer worked tirelessly to craft a solution that would efficiently distribute the grades and empower the kingdom's educators with valuable insights.
+
+// Could you lend your coding expertise to assist the JavaScript sorcerer in completing the distributeGrades function and bestow the gift of knowledge upon the kingdom's students?
+
+// Example 1:
+// Input:
+// [85, 92, 78, 65, 95]
+
+// Output:
+// { A: 2, B: 1, C: 1, D: 1, F: 0 }
+
+// Example 2:
+// Input:
+// [76, 81, 60, 55, 88}
+
+// Output:
+// { A: 0, B: 2, C: 1, D: 1, F: 1 }
+
+// Example 3:
+// Input:
+// [92, 95, 87, 60, 72]
+
+// Output:
+// { A: 2, B: 1, C: 1, D: 1, F: 0 }
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var scores = readLine().split(" ").map(x => parseInt(x));
+    console.log(distributeGrades(scores));
+}
+function distributeGrades(scores) {
+  const gradeCount = { A: 0, B: 0, C: 0, D: 0, F: 0 };
+
+  for (let score of scores) {
+    if (score >= 90) {
+      gradeCount.A++;
+    } else if (score >= 80) {
+      gradeCount.B++;
+    } else if (score >= 70) {
+      gradeCount.C++;
+    } else if (score >= 60) {
+      gradeCount.D++;
+    } else {
+      gradeCount.F++;
+    }
+  }
+
+  return gradeCount;
+}
+
+
+// Simple Calculator
+
+// Alice is a math teacher who wants to create a simple calculator using JavaScript. The calculator should be able to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+
+// Help Alice by creating a JavaScript function called simpleCalculator that takes two numbers and an operator (+, -, *, /) as input and returns the arithmetic operation result.
+
+// Example 1:
+// Input:
+// 9, 9, +
+
+// Output:
+// 18
+
+// Example 2:
+// Input:
+// 5, 2, /
+
+// Output:
+// 2.5
+
+// Example 3:
+// Input:
+// 5, 2, *
+
+// Output:
+// 10
+
+// Example 4:
+// Input:
+// 5, 2, -
+
+// Output:
+// 3
+
+// Example 5:
+// Input:
+// 9, 0, /
+
+// Output:
+// "Cannot divide by zero."
+
+// Example 6:
+// Input:
+// '9', 2, +
+
+// Output:
+// "Invalid input. Please enter numeric values."
+
+// Do not remove nor make any changes in  main() function
+function main() {
+    var num1 = parseInt(readLine());
+    var num2 = parseInt(readLine());
+    var operator = (readLine());
+    console.log(simpleCalculator(num1, num2, operator));
+}
+function simpleCalculator(num1, num2, operator) {
+ // Your code goes here
+ if (isNaN(num1) || isNaN(num2)) {
+    return "Invalid input. Please enter numeric values.";
+  }
+  
+  switch(operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    case '/':
+      if (num2 === 0) {
+        return "Cannot divide by zero.";
+      } else {
+        return num1 / num2;
+      }
+break;
+    default:
+      return "Unsupported operator. Please enter a valid operator (+, -, *, /).";
+    }}
+
+    
+  
+
+    // JavaScript Arrays and Strings
+    // •	The Word Reverser
+    // •	The Palindrome Detector
+    // •	The Array Rotator
+    
+    
+    
+    // JavaScript Objects and JSON
+    // •	The JSON Parser
+    // •	The Object Merger
+    // •	The Nested Object Finder
+    
+    // Functions in JavaScript – Basics
+    // •	Full Name
+    // •	Find Prime
+    // •	Number of Occurrences
+    
+    // Functions in JavaScript - Advanced
+    // •	Second smallest number
+    // •	Removing Duplicates
+    // •	Addition with closures
+    
+    // Asynchronous coding in JavaScript
+    // •	Counter
+    // •	Counter II
+    // •	Chunk Array
+    
+    // Basics of OOPS
+    // •	OOPs Rectangle
+    // •	OOPs Circle
+    // •	OOPs Calculator
+    
+    
+    
+    
+    
+    
+    // Ch 4. Modern JavaScript Concepts
+    
+    // Functional Programming
+    
+    // Is Your Year a Leap Year?
+    // EASY
+    // To Lower Case
+    // Medium
+    // Length of Last Word
+    // Hard
+    
+    
+    // ES5 & ES6 Concepts
+    // Object Manipulation
+    // Easy
+    // String Manipulation
+    // Easy
+    
+    // RegEx & Debugging in JavaScript
+    
+    // Extract Numbers
+    // Valid URL
+    // Remove Vowels
+    
+    
+    
